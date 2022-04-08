@@ -1,0 +1,124 @@
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.c-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.c-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.c-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+/* mobile -pc low resolution*/
+@media (max-width: 1199px) {
+    .paris__experience-lorem{
+        flex-direction: column;
+    }
+    .l-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .paris__video{
+        float: unset;
+    }
+    .footer-end-item{
+        text-align: center;
+    }
+    .blog-body:nth-child(4){
+        order: 4;
+    }
+    .blog-body:nth-child(2){
+        order: 3;
+    }
+    .tour-summer{
+        flex-direction: column;
+    }
+    .tour-summer__address{
+        flex-direction: column;
+    }
+    .header-navbar{
+        display: block;
+    }
+}
+@media (max-width:1023px){
+    .buy-tour__holiday-funny{
+        display: none;
+    }
+   .buy-tour__license{
+       position: unset;
+   }
+}
+/* 768-1999 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .tab768-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* moblie small*/
+@media (max-width: 479px) {
+    .wide{
+        width: 300px;
+    }
+    .header{
+        display: none;
+    }
+   
+}
+/* moblie big*/
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .wide{
+        width: 460px;
+    }
+}
+/* Tablet - PC low resolution */
+@media (min-width: 768px) and (max-width: 959px) {
+    .wide {
+        width: 748px;
+    }
+   
+}
+
+/* PC low resolution- 1199*/
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .wide{
+       width: 960px;
+    }
+   .tour-websumme{
+       display: none;
+   }
+   .tour-summer__sale{
+       display: none;
+   }
+   .tour-summer__address-item-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+}
+
+
